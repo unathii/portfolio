@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'contact_me.dart';
 
 class LandingPage extends StatelessWidget {
@@ -32,22 +31,6 @@ class LandingPage extends StatelessWidget {
         );
       }
     });
-
-    // @override
-    // Widget build(BuildContext context) {
-    //   return Container(
-    //     constraints: BoxConstraints.expand(
-    //       width: MediaQuery.of(context).size.width,
-    //       height: MediaQuery.of(context).size.height * 0.85,
-    //     ),
-    //     child: Row(
-    //       children: const [
-    //         UserInfo(),
-    //         UserBackground(),
-    //       ],
-    //     ),
-    //   );
-    // }
   }
 }
 

@@ -17,7 +17,6 @@ Widget _footerIcons() {
   return Center(
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      // mainAxisSize: MainAxisSize.min,
       children: [
         MaterialButton(
           onPressed: () async {
@@ -56,8 +55,9 @@ Widget _footerIcons() {
         MaterialButton(
           padding: EdgeInsets.all(8.0),
           onPressed: () async {
-            if (await canLaunch("https://linkedin.com/in/unnemuta")) {
-              await launch("https://linkedin.com/in/unnemuta");
+            if (await canLaunch(
+                "https://discordapp.com/users/chuckfini#4260")) {
+              await launch("https://discordapp.com/users/chuckfini#4260");
             }
           },
           child: Container(
@@ -75,9 +75,3 @@ Widget _footerIcons() {
     ),
   );
 }
-
-// void _launchURL(String url) async {
-//   if (!await launch(url, forceWebView: true)) throw 'Could not launch $url';
-// }
-
-// void _launch2() async {}
