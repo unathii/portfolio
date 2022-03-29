@@ -8,18 +8,13 @@ class LandingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constaints) {
-      if (constaints.maxWidth > 800) {
+      if (constaints.maxWidth < 800) {
         return Container(
           constraints: BoxConstraints.expand(
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height * 0.85,
           ),
-          child: Row(
-            children: [
-              UserInfo(),
-              UserBackground(),
-            ],
-          ),
+          child: const UserInfo(),
         );
       } else {
         return Container(
@@ -27,7 +22,12 @@ class LandingPage extends StatelessWidget {
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height * 0.85,
           ),
-          child: UserInfo(),
+          child: Row(
+            children: const [
+              UserInfo(),
+              UserBackground(),
+            ],
+          ),
         );
       }
     });
